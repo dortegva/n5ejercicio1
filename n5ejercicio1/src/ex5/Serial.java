@@ -44,7 +44,7 @@ public class Serial {
     }
 
 
-    static void ordenaDirectori(String ruta)  {
+    private static void ordenaDirectori(String ruta)  {
         File[] directori = new File(ruta).listFiles();
         SimpleDateFormat fecha = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
 
@@ -62,7 +62,7 @@ public class Serial {
                     + ("Última modificación: " + fecha.format(archivo.lastModified())));}
         }
     }
-     static void leerArchivo (File archivo){
+     private static void leerArchivo (File archivo){
 
         FileReader lectortxt=null;
         BufferedReader lectorPalabras=null;
@@ -97,7 +97,7 @@ public class Serial {
         }}
 
 
-    static String pideString(String pregunta){
+    private static String pideString(String pregunta){
         System.out.println(pregunta);
         Scanner sc = new Scanner(System.in);
         String resposta=sc.nextLine();

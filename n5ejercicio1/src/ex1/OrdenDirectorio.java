@@ -15,7 +15,7 @@ public class OrdenDirectorio {
 
 
 
-     static void ordenaDirectori(String ruta)  {
+     private static void ordenaDirectori(String ruta)  {
         File[] directori = new File(ruta).listFiles();
 
 
@@ -25,7 +25,7 @@ public class OrdenDirectorio {
             System.out.println(archivo);
         ;}
 }
-     static String pideString(String pregunta){
+     private static String pideString(String pregunta){
         System.out.println(pregunta);
         Scanner sc = new Scanner(System.in);
         String resposta=sc.nextLine();

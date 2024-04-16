@@ -18,7 +18,7 @@ public class LectorTxt {
 
 
 
-    static void ordenaDirectori(String ruta)  {
+    private static void ordenaDirectori(String ruta)  {
         File[] directori = new File(ruta).listFiles();
         SimpleDateFormat fecha = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
 
@@ -36,7 +36,7 @@ public class LectorTxt {
                     + ("Última modificación: " + fecha.format(archivo.lastModified())));}
         }
     }
-     static void leerArchivo (File archivo){
+     private static void leerArchivo (File archivo){
 
         FileReader lectortxt=null;
         BufferedReader lectorPalabras=null;
